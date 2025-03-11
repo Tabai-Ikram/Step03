@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- تعريف مجموعة الأحرف المستخدمة في الصفحة -->
+    <meta charset="UTF-8">
+    <!-- عنوان الصفحة -->
+    <title>BMI Calculator with jQuery and Bootstrap</title>
+    <!-- ربط ملف CSS الخاص بـ Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- ربط ملف CSS الخاص بالتطبيق -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ربط مكتبة jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- ربط ملف JS الخاص بـ Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- ربط ملف JS الخاص بالتطبيق مع تأجيل التنفيذ حتى يتم تحميل الصفحة بالكامل -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- بداية قسم المحتوى -->
+    <div class="container">
+        <!-- عنوان رئيسي للصفحة -->
+        <h1 class="mt-5">BMI Calculator</h1>
+        <!-- قسم لعرض نتيجة حساب BMI -->
+        <div id="result" class="mt-3"></div>
+        <!-- نموذج إدخال البيانات لحساب BMI -->
+        <form id="bmiForm" class="mt-3">
+            <!-- مجموعة إدخال الاسم -->
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+            <!-- مجموعة إدخال الوزن -->
+            <div class="form-group">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" name="weight" class="form-control" required>
+            </div>
+            <!-- مجموعة إدخال الطول -->
+            <div class="form-group">
+                <label for="height">Height (m):</label>
+                <input type="number" id="height" name="height" class="form-control" required>
+            </div>
+            <!-- زر لحساب BMI -->
+            <button type="submit" class="btn btn-primary">Calculate</button>
+        </form>
+    </div>
+</body>
+</html>
